@@ -18,9 +18,6 @@ public class AutoAnchors : MonoBehaviour
         this.parentSize = new Vector2(this.parentBounds.size.x, this.parentBounds.size.y);
 
         //anchor ratio => pixel position
-        Debug.Log(parentSize.x + " * " + rectTransform.anchorMin.x + "," + parentSize.y + " * " + rectTransform.anchorMin.y);
-        Debug.Log(parentSize.x + " * " + rectTransform.anchorMax.x + "," + parentSize.y + " * " + rectTransform.anchorMax.y);
-
         this.positionMin = new Vector2(this.parentSize.x * this.rectTransform.anchorMin.x, this.parentSize.y * this.rectTransform.anchorMin.y);
         this.positionMax = new Vector2(this.parentSize.x * this.rectTransform.anchorMax.x, this.parentSize.y * this.rectTransform.anchorMax.y);
 
